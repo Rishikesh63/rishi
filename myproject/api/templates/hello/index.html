@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(79, 75, 114);
+        color: white;
+        margin: 0;
+      }
+      nav {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        height: 80px;
+        justify-content: space-around;
+        align-items: center;
+        background-color: blue;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+     nav ul li {
+        display: flex;
+        padding: 20px;
+        margin: 10px;
+        justify-content: space-around;
+      }
+      ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      ul li a:hover {
+        color: rgb(0, 255, 76);
+        font-size: 2rem;
+      }
+
+      .left {
+        bottom: 0%;
+        margin-top: 23px;
+        color: black;
+        font-size: 2rem;
+      }
+      main hr {
+        color: rgb(0, 255, 106);
+        margin: 20px;
+      }
+      .first {
+        display: flex;
+        justify-content: space-around;
+        margin: 23px 0px;
+        text-align: center;
+      }
+      .first > div {
+        width: 30%;
+      }
+      .leftSection {
+        /* background-color: brown; */
+        font-size: 2rem;
+      }
+      .RightSection img {
+        width: 80%;
+        margin: 50px 0;
+        /* background-color: brown; */
+        /* display: inline-block; */
+      }
+      .purple {
+        color: rgb(226, 192, 43);
+      }
+      #element { 
+        color: black;
+      }
+      .second {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .second h1 {
+        font-size: 2rem;
+      }
+      .text-grey {
+        color: #808080;
+      }
+      .horizontal-line {
+        background: white;
+        width: 76vw;
+        height: 2px;
+        margin: 50px;
+        display: flex;
+      }
+      .second .vertical-line {
+        background: white;
+        height: 93px;
+        width: 2px;
+        margin: 0 6vw;
+      }
+      .vertical-title {
+        position: relative;
+        top: 70px;
+        width: 150px;
+      }
+      .top-image {
+        width: 50px;
+        position: relative;
+        top: -51px;
+      }
+      .vertical-desc {
+        position: relative;
+        top: 80px;
+        color: green;
+        width: 120px;
+      }
+      footer{
+        background-color: rgb(3, 3, 34);
+        /* height: 200px; */
+      }
+      .footer{
+        padding: 23px 122px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .footer ul{
+        list-style: none;
+      }
+      .footer > div{
+        width: 193px;
+
+      }
+      
+      .footer-rights{
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+      }
+      .button .btn{
+        background: #0a0724;
+padding: 5px;
+color: white;
+border: 2px solid white;
+border-radius: 10px;
+font-size: 20px;
+cursor: pointer;
+
+      }
+      .RightSection .button{ 
+        padding: 20px;
+      }
+      @media screen and (max-width: 1200px) {
+        body{
+          background-color: blueviolet;
+
+        }
+        .first{
+          flex-direction: column;
+        }
+      
+      .horizontal-line{
+        flex-direction: column;
+        width: 50vw;
+      }
+      .second .vertical-line{
+        height: unset;
+
+      }
+      footer{
+        display: none;
+      }
+      .vertical-desc,.vertical-title{
+        left: 45px;
+      }
+      nav{
+        flex-direction: column ;
+      }
+      .first>div{
+        display: contents;
+      }
+    } 
+
+    
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Rishi's Portfolio</div>
+        <div class="right"></div>
+        <ul>
+          <li><a href="/">Home </a></li>
+          <li><a href="/">About</a></li>
+          <li><a href="/">Servises</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="first">
+
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Rishi</span>
+
+          <div>and I am web developer</div>
+          <span id="element"></span>
+          <div class="button">
+            <button class="btn">Download Resume</button>
+            <button class="btn"> Upload Resume</button>
+            <button class="btn"> Visit Github</button>
+
+          </div>
+        </div>
+        <div class="RightSection">
+          <img src="" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="second">
+        <span class="text-grey"> What I have done so far</span>
+        <h1>Work Experience</h1>
+        <div class="horizontal-line">
+          <div class="vertical-line">
+            <img src="" alt="" class="top-image" />
+            <div class="vertical-title">HTML Developer( 2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              magnam voluptatibus tenetur neque, sapiente ex voluptates quas
+              nemo numquam esse adipisci enim officia explicabo?
+            </div>
+          </div> <div class="vertical-line">
+            <img src="" alt="" class="top-image" />
+            <div class="vertical-title">HTML Developer( 2010-2012)</div>
+            <div class="vertical-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              magnam voluptatibus tenetur neque, sapiente ex voluptates quas
+              nemo numquam esse adipisci enim officia explicabo?
+            </div>
+        </div> <div class="vertical-line">
+                <img src="" alt="" class="top-image" />
+                <div class="vertical-title">HTML Developer( 2010-2012)</div>
+                <div class="vertical-desc">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                  magnam voluptatibus tenetur neque, sapiente ex voluptates quas
+                  nemo numquam esse adipisci enim officia explicabo?
+                </div>
+            </div> <div class="vertical-line">
+                    <img src="" alt="" class="top-image" />
+                    <div class="vertical-title">HTML Developer( 2010-2012)</div>
+                    <div class="vertical-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                      magnam voluptatibus tenetur neque, sapiente ex voluptates quas
+                      nemo numquam esse adipisci enim officia explicabo?
+                    </div> 
+                </div> <div class="vertical-line">
+                    <img src="" alt="" class="top-image" />
+                    <div class="vertical-title">Software Developer-Youtube  ( 2010-2012)</div>
+                    <div class="vertical-desc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+                      magnam voluptatibus tenetur neque, sapiente ex voluptates quas
+                      nemo numquam esse adipisci enim officia explicabo?
+                    </div> 
+         
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rishi's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Services</li>
+        <li>Project</li>
+        <li>Contact</li>
+
+      </ul>          
+            </div>
+            <div class="footer-third">
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact</li>
+        
+              </ul>       
+            </div>
+            <div class="footer-fourth">
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Project</li>
+                <li>Contact</li>
+        
+              </ul>       
+            </div>
+        </div>
+        <div class="footer-rights">
+         Copyright &#169; www.rishiportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Web Developer",
+          "Graphic Designer",
+          "Web Designer",
+          "video Editor",
+          "Photographer",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>

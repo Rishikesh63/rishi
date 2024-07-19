@@ -1,0 +1,26 @@
+{% extends 'users/layout.html' %}
+{% block body %}
+    {% if message %}
+        <div>{{ message }}</div>
+    {% endif %}
+    
+    <form class="form1" action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <input class="user" type="text" name="username" placeholder="Username">
+        <input class="pass" type="password" name="password" id="password" placeholder="Password">
+        <input type="checkbox" id="showPassword"> Show Password
+        <input class="sub" type="submit" value="Login">
+    </form>
+
+    <script>
+        document.getElementById("showPassword").addEventListener("change", function() {
+            var passwordInput = document.getElementById("password");
+            if (this.checked) {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "password";
+            }
+        });
+    </script>
+{% endblock %}
+

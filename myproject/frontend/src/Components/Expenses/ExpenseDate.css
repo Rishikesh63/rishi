@@ -1,0 +1,22 @@
+.expense-date{
+    background-color: blueviolet;
+    color: black;
+    display: grid;
+    border: 11rex;
+    box-sizing: border-box;
+    border-radius: 0cqmax;
+}
+.expense-date_month{
+    background-color: blue;
+    color: aliceblue;
+    display: flex;
+    border: 0cqmax;
+    border-radius: 0cqmax;
+}
+.expense-date_year{
+    background-color: brown;
+    display: flex;
+}
+.expense-date_day{
+    background-color: blue;
+}

@@ -1,0 +1,16 @@
+{% extends "Question/layout.html" %}
+
+{% block body %}
+  {% if question %}
+    <h1>Delete Question</h1>
+    <p>Are you sure you want to delete this question?</p>
+    <form action="{% url 'delete_question' question.id %}" method="post">
+      {% csrf_token %}
+      <button type="submit">Delete</button>
+    </form>
+    <a href="/question">Cancel</a>
+  {% else %}
+    <p>The requested question does not exist.</p>
+    <a href="/question">Back to Questions</a>
+  {% endif %}
+{% endblock %}

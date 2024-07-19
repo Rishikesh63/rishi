@@ -1,0 +1,11 @@
+{% extends "Question/layout.html" %}
+
+{% block body %}
+    <h1>Questions:</h1>
+    <ul>
+        {% for question in questions %}
+            <li>{{question.id}}.{{question}}</li>
+        {% endfor %} 
+        <a href="/add_question">Add Question</a>
+    </ul>
+{% endblock %}    
